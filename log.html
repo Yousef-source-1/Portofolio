@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Inquiry Form</title>
+    <link rel="stylesheet" href="log/log.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Find Your Drive 🏎️</h2>
+            <p>Fill out the form below and our team will contact you shortly.</p>
+        </div>
+
+        <form action="index.html" target="_blank ">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="car-brand">Brand</label>
+                    <select id="car-brand">
+                        <option value="toyota">Toyota</option>
+                        <option value="mercedes">Mercedes-Benz</option>
+                        <option value="bmw">BMW</option>
+                        <option value="tesla">Tesla</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="car-model">Model</label>
+                    <input type="text" id="car-model" placeholder="e.g. M4 or Model 3">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="year">Year</label>
+                    <input type="number" id="year" min="2010" max="2026" value="2024">
+                </div>
+                <div class="input-group">
+                    <label for="fuel">Fuel Type</label>
+                    <select id="fuel">
+                        <option value="gasoline">Gasoline</option>
+                        <option value="electric">Electric</option>
+                        <option value="hybrid">Hybrid</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Additional Requirements</label>
+                <textarea id="message" rows="3" placeholder="Describe specific colors, features, etc."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
